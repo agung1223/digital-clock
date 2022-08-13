@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jam_bau.css">
+    <title>punya gw</title>
+</head>
+<body>
+    <
+    <div id="clock">
+        
+        <h2>Perkiraan gw aja ya</h2>
+        <p>Kalo bener alhamdulillah</p>
+        <div id="time">
+            <div><span id="hour">00</span><span>Jam</span></div>
+            <div><span id="minute">00</span><span>Menit</span></div>
+            <div><span id="second">00</span><span>Detik</span></div>
+        </div>
+    </div>
+
+  
+    <script>
+        function clock() {
+    //cash in dom objects
+    var hour = document.getElementById('hour');
+    var minute = document.getElementById('minute');
+    var second = document.getElementById('second');
+    //get hours minutes seconds
+    var h = new Date().getHours();
+    var m = new Date().getMinutes();
+    var s = new Date().getSeconds();
+    //assgning the hour into dom object
+    hour.innerHTML = h;
+    //assgning the minute into // //
+    minute.innerHTML = m;
+    //assgning the secnd into // //
+    second.innerHTML = s;
+}
+
+var interval = setInterval(clock, 1000);
+    </script>
+</body>
+</html>
